@@ -1,0 +1,9 @@
+- name: Script Prueba
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Corre Script
+      win_shell: C:\gamework\ip.ps1
+      args:
+        stdin: ANSIBLEWIN01\LAB C:\gamework ansiblesql ansiblesql
+  
